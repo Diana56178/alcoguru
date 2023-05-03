@@ -1,0 +1,124 @@
+.stars__quantity {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.star-rating {
+    font-size: 0;
+    white-space: nowrap;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    background: url('/img/star.png');
+    background-size: contain;
+  }
+  .star-rating i {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 1;
+    background: url('/img/star_checked.png');
+    background-size: contain;
+  }
+  .star-rating input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+  }
+  .star-rating input:hover + i,
+  .star-rating input:checked + i {
+    opacity: 1;
+  }
+  .star-rating i ~ i {
+    width: 40%;
+  }
+  .star-rating i ~ i ~ i {
+    width: 60%;
+  }
+  .star-rating i ~ i ~ i ~ i {
+    width: 80%;
+  }
+  .star-rating i ~ i ~ i ~ i ~ i {
+    width: 100%;
+  }
+  ::after,
+  ::before {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .reviews-stars__wrapper {
+    margin-bottom: 22px;
+    background-color: #1C1C1E;
+    padding: 30px 20px;
+    border-radius: 8px;
+  }
+
+  .star-rating__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .stars__rating-overline {
+    background-color: #AC8E68;
+    border-radius: 4px;
+    height: 100%;
+  }
+  .stars__raiting-item {
+    display: grid;
+    grid-template-columns: 45px 1fr auto;
+    column-gap: 10px;
+  }
+
+  .stars__raiting-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .stars__raiting-line {
+    background-color: #2E2E30;
+    max-width: 254px;
+    height: 22px;
+    border-radius: 4px;
+    padding: 2px;
+  }
+
+  .stars__rating-overline {
+    background-color: #AC8E68;
+  }
+
+  .rate-star svg {
+    fill: #606063;
+  }
+
+  .rate-star--filled svg {
+    fill: #AC8E68;
+  }
+
+    .rate-star svg {
+        width: 20px;
+        height: 20px;
+    }
+
+.rate-number {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}

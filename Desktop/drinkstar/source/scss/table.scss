@@ -1,0 +1,128 @@
+.product-info-item__desc {
+    margin: 0;
+}
+
+.product-info-item__title {
+    color: #747474;
+    font-size: 12px;
+}
+
+.product-info__list {
+    display: grid;
+    grid-template-areas: "title title abv"
+    "manufacturer manufacturer age"
+    "origin origin origin";
+    column-gap: 60px;
+    row-gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .product-info__list {
+        grid-template-areas: "title abv age manufacturer" 
+        "origin origin origin origin";
+
+        
+        margin: 0;
+    }
+
+    .product-info__list {
+        column-gap: 10px;
+    }
+
+    .product-info__item--origin {
+        grid-area: origin;
+        grid-column: 1 / 2;
+    }
+
+    .product-info__market {
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .product-info__market {
+        grid-column: 1 / -1;
+    }
+}
+
+.product-info__item--title {
+    grid-area: title;
+    width: 197px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.product-info-item__title--title {
+    grid-column: 1 / 4;
+}
+
+.product-info-item__desc-volume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    width: 55px;
+    height: 38px;
+    border-radius: 5px;
+    border: solid 1px #636366;
+    color: #636366;
+}
+
+.product-info-item__desc-volume--current {
+    color: #ffffff;
+    border: none;
+    background-color: #AC8E68;
+}
+
+.product-info__item--abv {
+    grid-area: abv;
+}
+
+.product-info__item--manufacturer {
+    grid-area: manufacturer;
+}
+
+.product-info__item--origin {
+    grid-area: origin;
+}
+
+.origin__button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: solid 1px #2E2E30;
+    background-color: #171717;
+    color: #AC8E68;
+}
+
+.product-info-item__desc--origin {
+    width: 244px;
+    padding: 6px 37px;
+    background-image: url("/img/flag-irland.svg");
+    background-repeat: no-repeat;
+}
+
+.product-info__market {
+    display: flex;
+    flex-direction: column;
+}
+
+.market-select {
+    color: #747474;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.market {
+    background-color: #171717;
+    color: #FFFFff;
+    padding: 9px 46px;
+    border-radius: 6px;
+    border-color: solid 1px #636366;
+    background-image: url("/img/countries-usa.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}

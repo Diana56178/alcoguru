@@ -1,0 +1,47 @@
+.page-inner__header  {
+    margin-bottom: 25px;
+}
+
+.breadcrumbs {
+    display: flex;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.breadcrumbs__link {
+    display: block;
+    padding: 8px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #8B8B8B;
+    text-decoration: none;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link{
+    color:#FFFFFF;
+}
+
+.versions-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.versions-list__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.versions-list__item {
+    padding: 2px 8px;
+    border: solid #636366 1px;
+    border-radius: 10px;
+    color: #747474;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.versions-list__item--current {
+    background-color: #AC8E68;
+    color: #ffffff;
+    border: none;
+}
